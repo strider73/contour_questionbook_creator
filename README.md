@@ -1,6 +1,55 @@
-# Curriculum Test Generator - Architecture Diagrams
+# Contour Question Book Creator
+
+A Claude Code-powered system for generating curriculum-aligned test variations from existing mathematics tests. Given a reference workbook (containing theory, formulas, and examples) and a test PDF, it creates fresh question variations that test the same concepts with new scenarios and diagrams.
+
+## Features
+
+- **Curriculum Analysis**: Extracts formulas, worked examples, and difficulty benchmarks from reference workbooks
+- **Intelligent Question Extraction**: Uses OCR and vision to extract questions and diagrams from test PDFs
+- **Fresh Question Generation**: Creates new questions that test the same concepts with different values and scenarios
+- **Automatic Diagram Creation**: Generates new diagrams for geometry, statistics, and polynomial questions
+- **PDF Output**: Produces professionally formatted test PDFs with complete answer sheets
+
+## Quick Start
+
+### Prerequisites
+
+```bash
+# Install required Python packages
+pip3 install Pillow PyMuPDF pytesseract reportlab matplotlib numpy
+
+# Install Tesseract OCR engine (macOS)
+brew install tesseract
+```
+
+### Usage
+
+```bash
+# Full test generation pipeline
+/generate-test "Workbook.pdf" "Test.pdf"
+
+# Individual commands (for debugging)
+/analyze-curriculum "Workbook.pdf"    # → curriculum_context.md
+/extract-test "Test.pdf"              # → ExtractedQuestions.md + images/
+/generate-variations                   # → PDF + ANSWERS.md + new_images/
+```
+
+### Output Files
+
+```
+[Working Directory]/
+├── curriculum_context.md           # Curriculum analysis
+├── ExtractedQuestions.md           # Original test with testing aspects
+├── [Test]_Version_B.pdf            # Final varied test
+├── [Test]_Version_B_ANSWERS.md     # Complete answer sheet
+├── images/                         # Extracted original diagrams
+├── new_images/                     # Generated question diagrams
+└── answer_images/                  # Answer diagrams (for sketch questions)
+```
 
 ---
+
+# Architecture
 
 ## 1. Main Orchestrator: curriculum-test-generator
 
