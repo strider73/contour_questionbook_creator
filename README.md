@@ -18,7 +18,7 @@ Coordinates the entire test generation workflow in SEQUENTIAL order.
 
 ---
 
-![curriculum-test-generator-CURRICULUM-TEST-GENERATOR ARCHITECTURE.drawio.png](attachment:a20eee71-c4a1-4a5c-8bc8-8c971195a6f3:curriculum-test-generator-CURRICULUM-TEST-GENERATOR_ARCHITECTURE.drawio.png)
+![curriculum-test-generator-CURRICULUM-TEST-GENERATOR ARCHITECTURE.drawio.png](images/curriculum-test-generator-CURRICULUM-TEST-GENERATOR%20ARCHITECTURE.drawio.png)
 
 ## 2. curriculum-analyzer
 
@@ -33,7 +33,7 @@ Analyzes reference workbooks to extract curriculum context.
 
 **Output:** curriculum_[context.md](http://context.md) with 8 sections (Topics, Formulas, Worked Examples, Difficulty Benchmarks, Solution Strategies, Common Patterns, Visual Diagram Patterns, Constraints)
 
-![curriculum-test-generator-CURRICULUM-ANALYZER AGENT ARCHITECTURE.drawio.png](attachment:4c920126-f2b2-4421-8baf-fcad13d0015a:curriculum-test-generator-CURRICULUM-ANALYZER_AGENT_ARCHITECTURE.drawio.png)
+![curriculum-test-generator-CURRICULUM-ANALYZER AGENT ARCHITECTURE.drawio.png](images/curriculum-test-generator-CURRICULUM-ANALYZER%20AGENT%20ARCHITECTURE.drawio.png)
 
 ---
 
@@ -60,7 +60,7 @@ Extracts questions and diagrams from test PDF using DIAGRAM-FIRST approach.
 
 ---
 
-![curriculum-test-generator-TEST-CONTENTS-EXTRACTOR AGENT ARCHITECTURE.drawio.png](attachment:8383481d-0198-4c0d-adab-44061ba614a7:curriculum-test-generator-TEST-CONTENTS-EXTRACTOR_AGENT_ARCHITECTURE.drawio.png)
+![curriculum-test-generator-TEST-CONTENTS-EXTRACTOR AGENT ARCHITECTURE.drawio.png](images/curriculum-test-generator-TEST-CONTENTS-EXTRACTOR%20AGENT%20ARCHITECTURE.drawio.png)
 
 ## 4. curriculum-aligned-question-generator
 
@@ -80,7 +80,7 @@ Generates FRESH test questions based on testing aspects.
 
 ---
 
-![curriculum-test-generator-CURRICULUM-ALIGNED-QUESTION-GENERATOR ARCHITECTURE.drawio.png](attachment:1f0e0e84-c660-4573-8116-46ba9f1d2cc1:curriculum-test-generator-CURRICULUM-ALIGNED-QUESTION-GENERATOR_ARCHITECTURE.drawio.png)
+![curriculum-test-generator-CURRICULUM-ALIGNED-QUESTION-GENERATOR ARCHITECTURE.drawio.png](images/curriculum-test-generator-CURRICULUM-ALIGNED-QUESTION-GENERATOR%20ARCHITECTURE.drawio.png)
 
 ## 5. Step 5: Extract Question Format Patterns (NEW PATTERN MANAGEMENT)
 
@@ -97,7 +97,7 @@ Discovers and adds NEW question format patterns to global library.
 
 **Existing Patterns:** Direct Recall, Calculation, Show/Prove, Solve Equation, Graph Sketch, Graph Reading, Context Translation, Multi-Part, Real-World Model, ... (grows over time)
 
-![curriculum-test-generator-Extract Question Format Patterns .drawio.png](attachment:e48681d0-7be4-4a67-89bf-91285575045b:curriculum-test-generator-Extract_Question_Format_Patterns_.drawio.png)
+![curriculum-test-generator-Extract Question Format Patterns .drawio.png](images/curriculum-test-generator-Extract%20Question%20Format%20Patterns%20.drawio.png)
 
 ---
 
