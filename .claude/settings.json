@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__drawio__get-selected-cell",
+      "mcp__drawio__add-rectangle",
+      "mcp__drawio__add-edge",
+      "mcp__drawio__delete-cell-by-id",
+      "mcp__drawio__get-shape-categories",
+      "mcp__drawio__get-shapes-in-category",
+      "mcp__drawio__get-shape-by-name",
+      "mcp__drawio__add-cell-of-shape",
+      "mcp__drawio__set-cell-shape",
+      "mcp__drawio__set-cell-data",
+      "mcp__drawio__edit-cell",
+      "mcp__drawio__edit-edge",
+      "mcp__drawio__list-paged-model"
+    ]
+  }
+}

@@ -1,0 +1,244 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textbf{Year 10 Mathematics}}
+\fancyhead[R]{\textbf{AOS 8 Mock CAT 2 - Version B}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% Section formatting
+\titleformat{\section}
+  {\normalfont\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries}{\thesubsection}{1em}{}
+
+% Question environment
+\newcounter{question}
+\newenvironment{question}[1]
+  {\refstepcounter{question}\subsection*{Question \thequestion\quad[#1]}}
+  {\vspace{1em}\hrule\vspace{1em}}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+
+\begin{document}
+
+% Title section
+\begin{center}
+{\Large\textbf{Year 10 Mathematics}}\\[0.3em]
+{\large\textbf{AOS 8 Revision [10.3] Mock CAT 2}}\\[0.3em]
+{\large\textbf{Version B}}\\[1em]
+\end{center}
+
+\noindent\textbf{Instructions:} Answer all questions. Show all working.\\
+\textbf{Total Marks:} 50\\
+\textbf{Time:} 60 minutes writing
+
+\vspace{1em}
+\hrule
+\vspace{1em}
+
+\section*{Section A: Short Answer Questions (34 Marks)}
+
+\hrule
+\vspace{1em}
+
+% Question 1
+\begin{question}{1 mark}
+Expand and simplify: $(x + 7)(x - 2)$.
+\vspace{3cm}
+\end{question}
+
+% Question 2
+\begin{question}{1 mark}
+Find the degree of $p(x) = x^2(2x^4 - 5x + 3)$, where the constant term is an integer.
+\vspace{3cm}
+\end{question}
+
+% Question 3
+\begin{question}{1 mark}
+State the x-intercepts of $y = x(x + 3)^2$.
+\vspace{3cm}
+\end{question}
+
+% Question 4
+\begin{question}{1 mark}
+What is the remainder when $x^5 - 8$ is divided by $(x + 2)$?
+\vspace{3cm}
+\end{question}
+
+% Question 5
+\begin{question}{2 marks}
+Sketch the graph of $y = (x + 3)(x - 1)(x - 4)$ on the axes below, clearly labelling all x-intercepts and the y-intercept.
+
+\vspace{0.5cm}
+\begin{center}
+\includegraphics[width=0.7\textwidth]{new_images_CAT2/q5_grid.png}
+\end{center}
+\vspace{0.5cm}
+\end{question}
+
+% Question 6
+\begin{question}{3 marks}
+Solve the following polynomial equations:
+
+\textbf{a.} $x(x + 4)(x - 7) = 0$ \hfill (1 mark)
+\vspace{2cm}
+
+\textbf{b.} $x^4 - 13x^2 + 36 = 0$ \hfill (2 marks)
+\vspace{3cm}
+\end{question}
+
+% Question 7
+\begin{question}{3 marks}
+Given $(x + 2)$ is a factor of $P(x) = x^3 - 2x^2 - 13x - 10$, fully factorise $P(x)$.
+\vspace{5cm}
+\end{question}
+
+% Question 8
+\begin{question}{3 marks}
+Given $P(x) = 3x^3 + 5x^2 - 26x + 8$:
+
+\textbf{a.} Verify that $x = 2$ is a root of the equation $P(x) = 0$. \hfill (1 mark)
+\vspace{2cm}
+
+\textbf{b.} Determine the remainder when $P(x)$ is divided by $(x - 1)$. \hfill (1 mark)
+\vspace{2cm}
+
+\textbf{c.} It is known that $P(x) \div (x - a) = Q(x) + \frac{18}{x-a}$, where $Q(x)$ is a quadratic polynomial. Find $P(a)$. \hfill (1 mark)
+\vspace{2cm}
+\end{question}
+
+\newpage
+
+% Question 9
+\begin{question}{3 marks}
+Sketch the graph of $y = (x - 1)^4 - 16$ on the axes below, labelling all axes intercepts and turning points.
+
+\vspace{0.5cm}
+\begin{center}
+\includegraphics[width=0.7\textwidth]{new_images_CAT2/q9_grid.png}
+\end{center}
+\vspace{0.5cm}
+\end{question}
+
+% Question 10
+\begin{question}{2 marks}
+Use long division to find the quotient and remainder when $3x^3 + 7x^2 - 4x + 1$ is divided by $(x + 2)$.
+\vspace{5cm}
+\end{question}
+
+% Question 11
+\begin{question}{2 marks}
+Find the value of $k$ if $(x + 3)$ is a factor of $P(x) = x^3 + kx^2 + 7x + 12$.
+\vspace{4cm}
+\end{question}
+
+% Question 12
+\begin{question}{2 marks}
+Expand and simplify $(x + 3)(x^2 - 4x + 5)$.
+\vspace{4cm}
+\end{question}
+
+% Question 13
+\begin{question}{5 marks}
+The monthly revenue, $R$, in thousands of dollars, of a startup company is modelled by $R(x) = x^3 - 12x^2 + 27x$, where $x$ is the number of units sold, in hundreds.
+
+\textbf{a.} Factorise the revenue function $R(x)$. \hfill (2 marks)
+\vspace{3cm}
+
+\textbf{b.} For what sales levels does the company earn zero revenue? \hfill (2 marks)
+\vspace{3cm}
+
+\textbf{c.} What is the revenue if 500 units are sold? \hfill (1 mark)
+\vspace{2cm}
+\end{question}
+
+% Question 14
+\begin{question}{5 marks}
+A population model $N(x)$ (in hundreds) after $x$ months of environmental changes is modelled by $N(x) = x^3 - 3x^2 - 10x + 24$.
+
+\textbf{a.} Using the Factor Theorem and trial-and-error, find a time $x$ at which the population returns to its initial level (where $N(x) = 24$). \hfill (2 marks)
+\vspace{3cm}
+
+\textbf{b.} Once you have this value, factorise $N(x) - 24$ completely to determine all times when the population equals 24. \hfill (3 marks)
+\vspace{4cm}
+\end{question}
+
+\newpage
+
+\section*{Section B: Extended Response Questions (16 Marks)}
+
+\hrule
+\vspace{1em}
+
+% Question 15
+\begin{question}{9 marks}
+Two trail elevation profiles give the vertical position (relative to a baseline) as a function of horizontal distance $x$ metres from the trailhead.
+
+\begin{itemize}[leftmargin=2cm]
+\item Trail A: $y = -3(x - 3)(x - 1), x \geq 0$ (elevation in metres)
+\item Trail B: $y = (x - 1)(x - 2)(x - 4), x \geq 0$ (elevation in metres)
+\end{itemize}
+
+\textbf{a.} Where does Trail A meet the baseline (ground)? \hfill (1 mark)
+\vspace{2cm}
+
+\textbf{b.} Where does Trail B meet the baseline? \hfill (1 mark)
+\vspace{2cm}
+
+\textbf{c.} Find the horizontal distance $\bar{x}$ at which Trail A reaches its maximum elevation (give your answer in decimal form). \hfill (2 marks)
+\vspace{3cm}
+
+\textbf{d.} For which value(s) of $x$ are the two trails at the same elevation, and what is that common elevation (in metres)? \hfill (2 marks)
+\vspace{4cm}
+
+\textbf{e.} Hence or otherwise, sketch the graph of the polynomial: $y = x^3 - 7x^2 + 14x - 8$ in the interval $-1 \leq x \leq 5$. Clearly label all axis intercepts and endpoints. \hfill (3 marks)
+
+\vspace{0.5cm}
+\begin{center}
+\includegraphics[width=0.7\textwidth]{new_images_CAT2/q15e_grid.png}
+\end{center}
+\vspace{0.5cm}
+\end{question}
+
+\newpage
+
+% Question 16
+\begin{question}{7 marks}
+An investment fund models its net monthly return $R(x)$ (in thousands of dollars) by a monic cubic:
+
+$$R(x) = x^3 + ax^2 + bx - 6$$
+
+Where $x$ is the number of hundreds of clients in a month.
+
+It is known that the fund breaks even when it has 200 clients, and that with 100 clients the fund produces a loss of \$8k.
+
+\textbf{a.} Using this information, form two simultaneous equations in $a$ and $b$. \hfill (3 marks)
+\vspace{4cm}
+
+\textbf{b.} Solve your equations to find $a$ and $b$. \hfill (2 marks)
+\vspace{4cm}
+
+\textbf{c.} Write down the complete polynomial $R(x)$. \hfill (1 mark)
+\vspace{2cm}
+
+\textbf{d.} Hence, factor $R(x)$ fully and state all three linear factors. \hfill (1 mark)
+\vspace{3cm}
+\end{question}
+
+\vspace{2em}
+\begin{center}
+\textbf{END OF TEST}
+\end{center}
+
+\end{document}

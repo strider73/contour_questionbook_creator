@@ -1,0 +1,291 @@
+---
+name: question-variation-types
+description: Library of question variation strategies for creating practice questions that test true understanding. Defines different variation approaches (different numbers, modified challenge, reverse pattern, conceptual application) with guidelines for when to use each type.
+---
+
+# Question Variation Types - Strategy Library
+
+## Purpose
+
+This skill provides a library of variation strategies for generating practice questions from original workbook questions. It helps create variations that test true understanding, not just memorization.
+
+**Used by**: `question-answer-agent` when generating PRACTICE.md files
+
+---
+
+## 📝 EDITABLE LIBRARY
+
+**This is a living document - update it as you discover better approaches!**
+
+You can:
+- ✏️ Add new variation types (Type 5, 6, 7...)
+- ✏️ Modify existing types based on what works for your student
+- ✏️ Adjust percentages and guidelines
+- ✏️ Update examples to be more relevant
+- ✏️ Remove types that don't test understanding effectively
+
+---
+
+## Core Principle
+
+**Goal**: Create variations that test understanding, not just memorization
+
+**Rule**: Generate **1 variation per original question**, choosing the BEST type to test the concept
+
+---
+
+## Variation Types
+
+### Type 1: Different Numbers (Same Structure)
+
+**When to use**:
+- Basic calculation questions
+- Simple data analysis
+- Building confidence with familiar patterns
+- Student needs practice with mechanics
+
+**Approach**:
+- Keep question structure **IDENTICAL** to original
+- Change **ONLY the numerical values**
+- Ensure new values create reasonable answers
+- Maintain **exact same difficulty** level
+- Same number of steps required
+
+**Example**:
+```markdown
+Original: Calculate the range of {5, 1, 9, 12, 3, 8}
+Variation: Calculate the range of {7, 2, 11, 15, 4, 9}
+```
+
+**Diagram rule**: If original has diagram, variation uses same diagram
+
+---
+
+### Type 2: Modified Challenge (Add Complexity)
+
+**When to use**:
+- Student shows mastery of basic concept
+- Ready for slight extension of thinking
+- Combining related concepts already learned
+- Pushing beyond comfort zone (but still achievable)
+
+**Approach**:
+- Add **one additional requirement** (not multiple!)
+- Combine with related concept student should know
+- Increase data size or steps **slightly**
+- Still achievable at same grade level
+- Don't double the difficulty - just extend it
+
+**Example**:
+```markdown
+Original: Calculate the range of {5, 1, 9, 12, 3, 8}
+Variation: Calculate the range AND interquartile range (IQR) of {4, 2, 8, 15, 6, 11, 3, 9}
+```
+
+**Diagram rule**: If original has diagram, variation uses same diagram (may reference additional parts)
+
+---
+
+### Type 3: Reverse Pattern (Work Backwards)
+
+**When to use**:
+- Testing true understanding of relationships
+- Moving beyond formula application
+- Checking if student understands the "why" not just the "how"
+- Deeper comprehension needed
+
+**Approach**:
+- Give the answer, ask for the input
+- Work backwards from result
+- Test inverse understanding
+- Requires reasoning, not just calculation
+- Student must understand relationship between variables
+
+**Example**:
+```markdown
+Original: Calculate the range of {5, 1, 9, 12, 3, 8}
+Variation: A data set has a range of 15 and a minimum value of 3. What is the maximum value?
+```
+
+**Diagram rule**: If original has diagram, variation may use diagram differently (e.g., "Given this diagram with range=15...")
+
+---
+
+### Type 4: Conceptual Application (Different Context)
+
+**When to use**:
+- Testing whether student understands concept vs. memorized procedure
+- Checking if they can apply knowledge to new situations
+- Real-world application needed
+- Compare/contrast understanding
+
+**Approach**:
+- Apply same concept to new scenario
+- Compare or contrast options
+- Test conceptual understanding
+- May change format (multiple choice, comparison, real-world context)
+- Ask "why" or "explain your reasoning"
+
+**Example**:
+```markdown
+Original: Calculate the range of {5, 1, 9, 12, 3, 8}
+Variation: Which data set has the larger range?
+- Set A: {3, 7, 11, 15}
+- Set B: {5, 8, 10, 14, 18}
+Explain your reasoning.
+```
+
+**Diagram rule**: If original has diagram, variation may use similar diagram type in different context
+
+---
+
+## Selecting Variation Type
+
+### Decision Framework
+
+**For each question, choose ONE type based on**:
+
+1. **Question complexity**:
+   - Simple calculations → Type 1
+   - Multi-step problems → Type 1 or 2
+   - Conceptual questions → Type 3 or 4
+
+2. **Learning goal**:
+   - Procedural practice → Type 1 or 2
+   - Conceptual understanding → Type 3 or 4
+   - Problem-solving skills → Type 2 or 3
+
+3. **Student readiness**:
+   - Building confidence → Type 1
+   - Testing mastery → Type 2-4
+   - Challenging thinking → Type 3 or 4
+
+### Distribution Guideline
+
+**Across all questions in a workbook, aim for approximately**:
+
+- **~40% Type 1** (different numbers) - Build confidence and mechanical practice
+- **~30% Type 2** (modified challenge) - Extend thinking slightly
+- **~20% Type 3** (reverse pattern) - Test deep understanding
+- **~10% Type 4** (conceptual) - Apply to new contexts
+
+**Note**: These are guidelines, not strict rules. Adjust based on:
+- Student's current level
+- Difficulty of original questions
+- Time since concept was taught
+- Student's confidence with topic
+
+---
+
+## CRITICAL: Diagram Handling (Inline Creation)
+
+### Diagram Creation Strategy by Variation Type
+
+| Type | When to Create | Strategy | Example |
+|------|----------------|----------|---------|
+| **Type 1** | Never | Reuse original diagram | Square 14cm → Square 20cm (same diagram reused) |
+| **Type 2** | **ALWAYS** | **CREATE NEW inline** | Square → Rectangle (new diagram created during question generation) |
+| **Type 3** | Never | Reuse original diagram | Circle segment (backwards question, same diagram) |
+| **Type 4** | **ALWAYS** | **CREATE NEW inline** | Circle → Ellipse (new diagram created during question generation) |
+
+### Implementation Details
+
+**When**: During variation generation in question-answer-agent (Step 2)
+
+**How**:
+1. Generate variation question using this skill (question-variation-types)
+2. **IF Type 2 or Type 4 AND original had diagram**:
+   - Extract parameters from variation question text
+   - Call diagram_utils.py to create new PNG file
+   - Update markdown reference to new file: `images/diagram_q3_var_square20cm.png`
+3. **ELSE (Type 1 or Type 3)**:
+   - Keep original diagram reference unchanged: `images/diagram_page02_geometry.png`
+
+**Result**: PRACTICE.md and ANSWERS.md have correct diagram references from the start (no post-processing needed)
+
+---
+
+## Domain-Specific Guidelines
+
+### For Statistics/Data Questions
+
+**Type 1**: Change data values, keep set size
+**Type 2**: Add quartiles, IQR, standard deviation to basic questions
+**Type 3**: Given mean and median, find possible data set
+**Type 4**: Compare two data sets, which is more variable?
+
+### For Probability Questions
+
+**Type 1**: Different objects/scenarios, same probability structure
+**Type 2**: Add "and then" or conditional probability
+**Type 3**: Given probability, what's the sample space?
+**Type 4**: Real-world scenarios (games, weather, sports)
+
+### For Algebra Questions
+
+**Type 1**: Different coefficients, same equation structure
+**Type 2**: Add verification step or check answer
+**Type 3**: Given solution, find the equation
+**Type 4**: Word problems with real-world context
+
+### For Geometry Questions
+
+**Type 1**: Different measurements, same shape
+**Type 2**: Add perimeter/area when only one was asked
+**Type 3**: Given area, find dimensions
+**Type 4**: Compare shapes, which has larger area/perimeter?
+
+---
+
+## Adding New Variation Types
+
+**To add Type 5, 6, etc.:**
+
+1. Define clear "When to use" criteria
+2. Describe the approach clearly
+3. Provide concrete examples
+4. Specify diagram handling rules
+5. Update "Distribution Guideline" percentages
+6. Test with real questions first
+
+**Template for new types**:
+
+```markdown
+### Type X: [Name of Approach]
+
+**When to use**:
+- [Situation 1]
+- [Situation 2]
+
+**Approach**:
+- [Step 1]
+- [Step 2]
+
+**Example**:
+```
+Original: [example]
+Variation: [example]
+```
+
+**Diagram rule**: [how diagrams are handled]
+```
+
+---
+
+## Version History
+
+**v1.0** (2025-12-29)
+- Initial library with 4 variation types
+- Type 1: Different Numbers
+- Type 2: Modified Challenge
+- Type 3: Reverse Pattern
+- Type 4: Conceptual Application
+
+**Future updates**: Add new types here as you develop better strategies!
+
+---
+
+## Related Resources
+
+- **question-answer-agent** - Uses this skill to generate PRACTICE.md files
+- **math-workbook-ocr** - OCR and LaTeX knowledge for mathematical content

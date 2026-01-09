@@ -1,0 +1,162 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{array}
+\usepackage{tikz}
+\usepackage{enumitem}
+\usepackage{tcolorbox}
+\usetikzlibrary{arrows.meta,decorations.pathmorphing}
+
+% Header/Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textbf{\Large CONTOUR}\textsf{EDUCATION}}
+\fancyhead[R]{Year 10 Mathematics}
+\fancyfoot[L]{MA10 - {{TOPIC}} - Mock CAT}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Question box environment
+\newtcolorbox{questionbox}{
+    colback=white,
+    colframe=black,
+    boxrule=0.5pt,
+    arc=0pt,
+    left=5pt,
+    right=5pt,
+    top=5pt,
+    bottom=5pt
+}
+
+\begin{document}
+
+% ============================================
+% TITLE PAGE
+% ============================================
+\begin{center}
+\vspace*{3cm}
+
+{\Huge \textbf{\textsf{CONTOUR}}\textsf{EDUCATION}}
+
+\vspace{0.5cm}
+\small Website: contoureducation.com.au | Phone: 1800 888 300\\
+Email: hello@contoureducation.com.au
+
+\vspace{2cm}
+
+{\LARGE \textbf{Year 10 Mathematics}}\\[0.5cm]
+{\Large \textbf{{{TOPIC}}}}\\[0.3cm]
+{\Large Mock CAT}
+
+\vspace{1cm}
+
+{\large 50 Marks. 60 Minutes Writing.}
+
+\vspace{1.5cm}
+
+\textbf{\underline{Results:}}
+
+\vspace{0.5cm}
+
+\begin{tabular}{|p{6cm}|p{4cm}|}
+\hline
+\textbf{Short Answer Questions} & \hspace{2cm}/ 36 \\[0.5cm]
+\hline
+\textbf{Extended Response Questions} & \hspace{2cm}/ 14 \\[0.5cm]
+\hline
+\end{tabular}
+
+\vspace{2cm}
+
+\hfill \large{\_\_\_\_\_\_\_\_ / 50}
+
+\end{center}
+
+\newpage
+
+% ============================================
+% SECTION A: SHORT ANSWER QUESTIONS
+% ============================================
+\section*{\underline{Section A: Short Answer Questions} {\color{gray}(36 Marks)}}
+
+\vspace{0.5cm}
+
+%% Question 1
+\begin{questionbox}
+\textbf{Question 1} (1 mark)
+
+% INSERT QUESTION HERE
+
+\vspace{2cm}
+\end{questionbox}
+
+\vspace{0.3cm}
+
+%% Question 2
+\begin{questionbox}
+\textbf{Question 2} (1 mark)
+
+% INSERT QUESTION HERE
+
+\vspace{2cm}
+\end{questionbox}
+
+% ... Continue with more questions ...
+
+\newpage
+
+% ============================================
+% SECTION B: EXTENDED RESPONSE QUESTIONS
+% ============================================
+\section*{\underline{Section B: Extended Response Questions} {\color{gray}(14 Marks)}}
+
+\vspace{0.5cm}
+
+%% Extended Question 1
+\begin{questionbox}
+\textbf{Question X} (6 marks)
+
+% INSERT EXTENDED QUESTION HERE
+
+\vspace{8cm}
+\end{questionbox}
+
+\newpage
+
+%% Extended Question 2
+\begin{questionbox}
+\textbf{Question Y} (8 marks)
+
+% INSERT EXTENDED QUESTION HERE
+
+\vspace{10cm}
+\end{questionbox}
+
+\newpage
+
+% ============================================
+% ANSWER KEY
+% ============================================
+\section*{ANSWER KEY}
+
+\subsection*{Section A: Short Answer Questions}
+
+\begin{enumerate}
+\item Answer 1
+\item Answer 2
+% ... Continue ...
+\end{enumerate}
+
+\subsection*{Section B: Extended Response Questions}
+
+\textbf{Question X:}
+\begin{enumerate}[label=(\alph*)]
+\item Answer a
+\item Answer b
+% ... Continue ...
+\end{enumerate}
+
+\end{document}
