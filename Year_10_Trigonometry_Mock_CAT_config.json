@@ -1,0 +1,209 @@
+{
+  "title": "Year 10 Mathematics",
+  "subtitle": "AOS 7: Trigonometry - Mock CAT",
+  "version": "Version A",
+  "total_marks": 60,
+  "time_allowed": "60 minutes",
+  "instructions": [
+    "Answer ALL questions in the spaces provided",
+    "Show all working to receive full marks",
+    "CAS calculators are permitted unless otherwise stated",
+    "Diagrams are NOT drawn to scale",
+    "Give answers to 2 decimal places unless otherwise specified",
+    "Exact values should be given where indicated"
+  ],
+  "output_path": "Year_10_Trigonometry_Mock_CAT.pdf",
+  "sections": [
+    {
+      "name": "Section A: Multiple Choice",
+      "marks": 10,
+      "questions": [
+        {
+          "number": 1,
+          "marks": 1,
+          "text": "In a right-angled triangle, if the opposite side is 5 cm and the hypotenuse is 13 cm, what is sin(θ)?<br/><br/>A. 5/12<br/>B. 5/13<br/>C. 12/13<br/>D. 13/5",
+          "space": 2
+        },
+        {
+          "number": 2,
+          "marks": 1,
+          "text": "What is the exact value of tan(45°)?<br/><br/>A. 0<br/>B. 1/2<br/>C. 1<br/>D. √3",
+          "space": 2
+        },
+        {
+          "number": 3,
+          "marks": 1,
+          "text": "A ladder leans against a wall making a 65° angle with the ground. If the ladder is 4 m long, how far is the base from the wall?<br/><br/>A. 4 × sin(65°)<br/>B. 4 × cos(65°)<br/>C. 4 × tan(65°)<br/>D. 4 ÷ cos(65°)",
+          "space": 2
+        },
+        {
+          "number": 4,
+          "marks": 1,
+          "text": "An angle of elevation of 35° is observed from ground level. This means:<br/><br/>A. The observer is looking down at 35° below horizontal<br/>B. The observer is looking up at 35° above horizontal<br/>C. The object is 35 m above the ground<br/>D. The angle between two objects is 35°",
+          "space": 2
+        },
+        {
+          "number": 5,
+          "marks": 1,
+          "text": "A bearing of 135° means the direction is:<br/><br/>A. North-East<br/>B. South-East<br/>C. South-West<br/>D. North-West",
+          "space": 2
+        },
+        {
+          "number": 6,
+          "marks": 1,
+          "text": "The sine rule states that in any triangle ABC:<br/><br/>A. a² = b² + c² - 2bc·cos(A)<br/>B. a/sin(A) = b/sin(B) = c/sin(C)<br/>C. Area = ½ab·sin(C)<br/>D. sin²(A) + cos²(A) = 1",
+          "space": 2
+        },
+        {
+          "number": 7,
+          "marks": 1,
+          "text": "Convert 60° to radians:<br/><br/>A. π/6<br/>B. π/4<br/>C. π/3<br/>D. π/2",
+          "space": 2
+        },
+        {
+          "number": 8,
+          "marks": 1,
+          "text": "On the unit circle, at angle θ = 180°, the coordinates are:<br/><br/>A. (1, 0)<br/>B. (0, 1)<br/>C. (-1, 0)<br/>D. (0, -1)",
+          "space": 2
+        },
+        {
+          "number": 9,
+          "marks": 1,
+          "text": "The exact value of cos(30°) is:<br/><br/>A. 1/2<br/>B. √2/2<br/>C. √3/2<br/>D. 1",
+          "space": 2
+        },
+        {
+          "number": 10,
+          "marks": 1,
+          "text": "The period of y = sin(x) is:<br/><br/>A. π<br/>B. 2π<br/>C. 180°<br/>D. 90°",
+          "space": 2
+        }
+      ]
+    },
+    {
+      "name": "Section B: Short Answer - Core Topics (4A-4D)",
+      "marks": 18,
+      "new_page": true,
+      "questions": [
+        {
+          "number": 11,
+          "marks": 3,
+          "text": "In the right-angled triangle shown, find the value of x correct to 2 decimal places.",
+          "diagram": "new_images/q11_triangle.png",
+          "space": 5
+        },
+        {
+          "number": 12,
+          "marks": 3,
+          "text": "Find the size of angle θ, correct to 1 decimal place.",
+          "diagram": "new_images/q12_triangle.png",
+          "space": 5
+        },
+        {
+          "number": 13,
+          "marks": 4,
+          "text": "From the top of a cliff 80 m high, the angle of depression to a boat at sea is 32°.",
+          "parts": [
+            {"label": "a", "text": "Draw a diagram showing the situation.", "marks": 1, "space": 4},
+            {"label": "b", "text": "Calculate the horizontal distance from the base of the cliff to the boat.", "marks": 3, "space": 5}
+          ]
+        },
+        {
+          "number": 14,
+          "marks": 4,
+          "text": "A hiker walks 5 km on a bearing of 040° from point A to point B, then walks 8 km on a bearing of 130° from B to point C.",
+          "parts": [
+            {"label": "a", "text": "Draw a diagram showing the journey.", "marks": 1, "space": 5},
+            {"label": "b", "text": "Calculate the angle ABC.", "marks": 1, "space": 3},
+            {"label": "c", "text": "Use the cosine rule to find the direct distance from A to C.", "marks": 2, "space": 5}
+          ]
+        },
+        {
+          "number": 15,
+          "marks": 4,
+          "text": "A plane flies from airport P on a bearing of 250° for 180 km to airport Q. From Q, the plane then flies on a bearing of 340° for 240 km to airport R.",
+          "parts": [
+            {"label": "a", "text": "Draw a diagram showing the flight path.", "marks": 1, "space": 5},
+            {"label": "b", "text": "Find the bearing of P from R.", "marks": 3, "space": 5}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Section C: Extended Response - 10A Topics (4E-4K)",
+      "marks": 32,
+      "new_page": true,
+      "questions": [
+        {
+          "number": 16,
+          "marks": 5,
+          "text": "<b>Applications in Three Dimensions</b><br/><br/>A rectangular room has length 6 m, width 4 m, and height 3 m. A spider is at corner A on the floor, and a fly is at the opposite corner B on the ceiling.",
+          "parts": [
+            {"label": "a", "text": "Draw a diagram of the room showing corners A and B.", "marks": 1, "space": 5},
+            {"label": "b", "text": "Find the length of the diagonal across the floor from A.", "marks": 2, "space": 4},
+            {"label": "c", "text": "Find the direct distance from A to B through the air.", "marks": 2, "space": 4}
+          ]
+        },
+        {
+          "number": 17,
+          "marks": 5,
+          "text": "<b>The Sine Rule</b><br/><br/>In triangle PQR, angle P = 48°, angle Q = 67°, and side p = 15 cm (opposite to angle P).",
+          "parts": [
+            {"label": "a", "text": "Find angle R.", "marks": 1, "space": 3},
+            {"label": "b", "text": "Use the sine rule to find side q (opposite to angle Q).", "marks": 2, "space": 5},
+            {"label": "c", "text": "Find side r (opposite to angle R).", "marks": 2, "space": 5}
+          ]
+        },
+        {
+          "number": 18,
+          "marks": 5,
+          "text": "<b>The Cosine Rule</b><br/><br/>In triangle ABC, a = 8 cm, b = 11 cm, and c = 14 cm.",
+          "parts": [
+            {"label": "a", "text": "Use the cosine rule to find angle C (the largest angle).", "marks": 3, "space": 6},
+            {"label": "b", "text": "Find angle A.", "marks": 2, "space": 5}
+          ]
+        },
+        {
+          "number": 19,
+          "marks": 4,
+          "text": "<b>Area of a Triangle</b><br/><br/>A triangular garden has two sides of length 12 m and 9 m with an included angle of 72°.",
+          "parts": [
+            {"label": "a", "text": "Calculate the area of the garden.", "marks": 2, "space": 5},
+            {"label": "b", "text": "Find the length of the third side.", "marks": 2, "space": 5}
+          ]
+        },
+        {
+          "number": 20,
+          "marks": 4,
+          "text": "<b>The Unit Circle</b><br/><br/>Using the unit circle, find the exact values of:",
+          "parts": [
+            {"label": "a", "text": "sin(150°)", "marks": 1, "space": 3},
+            {"label": "b", "text": "cos(225°)", "marks": 1, "space": 3},
+            {"label": "c", "text": "tan(330°)", "marks": 2, "space": 4}
+          ]
+        },
+        {
+          "number": 21,
+          "marks": 4,
+          "text": "<b>Exact Values and Radians</b>",
+          "parts": [
+            {"label": "a", "text": "Convert 5π/6 radians to degrees.", "marks": 1, "space": 3},
+            {"label": "b", "text": "Find the exact value of sin(π/4) + cos(π/3).", "marks": 2, "space": 4},
+            {"label": "c", "text": "An arc of a circle has length 8 cm and subtends an angle of 2 radians at the centre. Find the radius.", "marks": 1, "space": 3}
+          ]
+        },
+        {
+          "number": 22,
+          "marks": 5,
+          "text": "<b>Graphs of Trigonometric Functions (Type 5: Construct & Calculate)</b><br/><br/>The function y = 2sin(3x) + 1 is defined for 0° ≤ x ≤ 360°.",
+          "parts": [
+            {"label": "a", "text": "State the amplitude of the function.", "marks": 1, "space": 2},
+            {"label": "b", "text": "State the period of the function.", "marks": 1, "space": 2},
+            {"label": "c", "text": "State the range of the function.", "marks": 1, "space": 2},
+            {"label": "d", "text": "Sketch the graph, showing all key features including intercepts with the axes.", "marks": 2, "space": 8}
+          ]
+        }
+      ]
+    }
+  ]
+}

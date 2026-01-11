@@ -139,6 +139,69 @@ Explain your reasoning.
 
 ---
 
+### Type 5: Construct & Calculate (No Diagram Given)
+
+**When to use**:
+- Testing visualization and spatial reasoning skills
+- Checking if student truly understands shape properties
+- Composite shapes (cylinders + cones, prisms + pyramids, etc.)
+- Multi-step problems requiring geometric reasoning
+- Student needs practice translating text descriptions to diagrams
+- Assessing deeper understanding beyond "plug into formula"
+
+**Approach**:
+- Provide **text description only** - NO diagram given
+- Include a real-world context (rocket, building, container, etc.)
+- Give some dimensions directly, others must be calculated
+- Require student to **draw and label** the diagram first (Part a)
+- Break into sub-parts: draw → find missing dimension → calculate
+- Use Pythagorean theorem or algebra to find hidden dimensions
+- Final part asks for volume, surface area, or total surface area
+
+**Structure Template**:
+```markdown
+**a)** Draw a labeled diagram showing all given dimensions. [1 mark]
+**b)** Calculate [missing dimension using given relationships]. [1 mark]
+**c)** Find [another derived measurement]. [1 mark]
+**d)** Calculate the [total volume/TSA/area]. [2 marks]
+```
+
+**Example**:
+```markdown
+Original: A cylinder has radius 4 cm and height 10 cm. Calculate its volume.
+
+Variation:
+## The Rocket Model
+
+A model rocket consists of a cylindrical body with a conical nose on top. The cylinder has a radius of 3 cm and a height that is unknown. The cone has the same radius as the cylinder and a slant height of 5 cm. The total height of the entire rocket is 22 cm.
+
+**a)** Draw a labeled diagram of the rocket showing all given dimensions. [1 mark]
+
+**b)** Calculate the perpendicular height of the cone. [1 mark]
+
+**c)** Find the height of the cylindrical body. [1 mark]
+
+**d)** Calculate the total volume of the rocket model. [2 marks]
+```
+
+**Common Composite Shape Scenarios**:
+- Rocket/Missile: Cylinder + Cone
+- Silo/Barn: Cylinder + Hemisphere
+- House/Shed: Rectangular prism + Triangular prism (roof)
+- Ice cream cone: Cone + Hemisphere
+- Capsule/Pill: Cylinder + 2 Hemispheres
+- Trophy/Cup: Cone (inverted) + Cylinder
+- Storage tank: Cylinder + 2 Cones (ends)
+
+**Diagram rule**: **NO diagram provided** - student must draw it themselves. Answer key should include the correct labeled diagram.
+
+**Mark allocation guideline**:
+- Drawing diagram: 1 mark
+- Each intermediate calculation: 1 mark
+- Final volume/TSA calculation: 2 marks (method + answer)
+
+---
+
 ## Selecting Variation Type
 
 ### Decision Framework
@@ -164,16 +227,18 @@ Explain your reasoning.
 
 **Across all questions in a workbook, aim for approximately**:
 
-- **~40% Type 1** (different numbers) - Build confidence and mechanical practice
-- **~30% Type 2** (modified challenge) - Extend thinking slightly
-- **~20% Type 3** (reverse pattern) - Test deep understanding
+- **~35% Type 1** (different numbers) - Build confidence and mechanical practice
+- **~25% Type 2** (modified challenge) - Extend thinking slightly
+- **~15% Type 3** (reverse pattern) - Test deep understanding
 - **~10% Type 4** (conceptual) - Apply to new contexts
+- **~15% Type 5** (construct & calculate) - Visualization and multi-step reasoning
 
 **Note**: These are guidelines, not strict rules. Adjust based on:
 - Student's current level
 - Difficulty of original questions
 - Time since concept was taught
 - Student's confidence with topic
+- **Type 5 works best for geometry/measurement topics**
 
 ---
 
@@ -187,6 +252,7 @@ Explain your reasoning.
 | **Type 2** | **ALWAYS** | **CREATE NEW inline** | Square → Rectangle (new diagram created during question generation) |
 | **Type 3** | Never | Reuse original diagram | Circle segment (backwards question, same diagram) |
 | **Type 4** | **ALWAYS** | **CREATE NEW inline** | Circle → Ellipse (new diagram created during question generation) |
+| **Type 5** | **ANSWER ONLY** | **NO diagram in question, CREATE for answer key** | Text description → Student draws → Answer key shows correct diagram |
 
 ### Implementation Details
 
@@ -234,6 +300,19 @@ Explain your reasoning.
 **Type 2**: Add perimeter/area when only one was asked
 **Type 3**: Given area, find dimensions
 **Type 4**: Compare shapes, which has larger area/perimeter?
+**Type 5**: Composite shapes described in text only - student draws, finds missing dimensions, calculates volume/TSA
+
+**Type 5 Geometry Scenarios**:
+| Real-World Context | Shapes Combined | Hidden Dimension |
+|--------------------|-----------------|------------------|
+| Rocket/Missile | Cylinder + Cone | Cone height (use Pythagorean with slant height) |
+| Grain Silo | Cylinder + Hemisphere | Total height minus radius = cylinder height |
+| House/Barn | Rectangular prism + Triangular prism | Roof height from total height |
+| Ice Cream | Cone + Hemisphere | Hemisphere radius = cone radius |
+| Pill/Capsule | Cylinder + 2 Hemispheres | Cylinder length = total - 2×radius |
+| Water Tank | Cylinder + 2 Cones | Cone heights from slant height |
+| Pencil | Cylinder + Cone (tip) | Cone height from slant height |
+| Trophy Cup | Inverted cone + Cylinder base | Various from total height |
 
 ---
 
@@ -273,6 +352,13 @@ Variation: [example]
 ---
 
 ## Version History
+
+**v1.1** (2026-01-11)
+- Added Type 5: Construct & Calculate (No Diagram Given)
+- Student must draw diagram from text description
+- Ideal for composite 3D shapes (rockets, silos, capsules, etc.)
+- Updated distribution guidelines to include Type 5 (~15%)
+- Added Type 5 geometry scenarios table
 
 **v1.0** (2025-12-29)
 - Initial library with 4 variation types
