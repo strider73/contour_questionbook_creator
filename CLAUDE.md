@@ -120,6 +120,69 @@ All diagram questions are classified before generation:
 - **Type B (Output)**: Blank grid for student sketching → Create BLANK GRID only (not the answer!)
 - **Type C (Reference)**: Partial information for annotation → Create similar partial diagram
 
+## Input Methods
+
+### Two Scenarios for Question Creation
+
+| Scenario | Input | When to Use |
+|----------|-------|-------------|
+| **A. With Contour Workbook** | Full Contour workbook PDF | Contour study material **EXISTS** for this topic |
+| **B. Without Workbook** | 3-section scan from textbook | Contour study material **DOES NOT EXIST** yet |
+
+### Scenario A: Contour Workbook Available (Default)
+
+```bash
+/generate-test "ContourWorkbook.pdf" "Test.pdf"
+```
+
+Use the full Contour workbook PDF as curriculum reference.
+
+### Scenario B: No Contour Workbook (Textbook Scan)
+
+When Contour hasn't created study material for a topic, scan these **3 sections** from the school textbook (Cambridge, Jacaranda, Nelson, etc.):
+
+```
+textbook-scan/
+├── Summary section      → Chapter mind map (formulas, concepts)
+├── Checklist section    → "I can..." success criteria + difficulty levels
+└── Review section       → Short answer, MCQ, extended response examples
+```
+
+#### What Each Section Provides
+
+| Section | What It Contains | Replaces |
+|---------|------------------|----------|
+| **1. Chapter Summary** | Mind map of all formulas, theorems, concepts | Workbook theory pages |
+| **2. Chapter Checklist** | "I can..." statements with difficulty codes (4A, 4B, etc.) | Test standards / skill targets |
+| **3. Review Questions** | Short answer + MCQ + Extended response with solutions | Question format examples |
+
+#### Why This Works
+
+These 3 sections (~6-10 pages) contain **everything** a full workbook provides:
+- **Summary** → What formulas/concepts are available (curriculum context)
+- **Checklist** → What skills to test and at what level (testing aspects)
+- **Review** → How questions should look and be structured (question templates)
+
+#### Usage
+
+```bash
+# Place scans in working directory
+working-folder/
+├── textbook-scan/
+│   ├── summary.jpeg
+│   ├── checklist_1.jpeg
+│   ├── checklist_2.jpeg
+│   ├── review_1.jpeg
+│   ├── review_2.jpeg
+│   └── ...
+└── (optional) existing_test.pdf
+
+# Run with scan folder instead of workbook
+/generate-test "textbook-scan/" "Test.pdf"
+```
+
+---
+
 ## Key Concepts
 
 ### Testing Aspect Analysis
