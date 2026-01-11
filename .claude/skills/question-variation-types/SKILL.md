@@ -1,6 +1,6 @@
 ---
 name: question-variation-types
-description: Library of question variation strategies for creating practice questions that test true understanding. Defines different variation approaches (different numbers, modified challenge, reverse pattern, conceptual application) with guidelines for when to use each type.
+description: Library of question variation strategies (Types 1-5) plus Real-Life Context Layer for creating practice questions that test true understanding. Types define mathematical variation approaches; Real-Life Context Layer wraps questions in real-world scenarios where students must extract information from context.
 ---
 
 # Question Variation Types - Strategy Library
@@ -202,6 +202,104 @@ A model rocket consists of a cylindrical body with a conical nose on top. The cy
 
 ---
 
+## Real-Life Context Layer
+
+### What It Is
+
+**Real-Life Context is NOT a variation type** - it is a **presentation layer** that wraps any Type 1-5 variation in a real-world scenario.
+
+**Key Difference:**
+- **Variation Types (1-5)**: Change the mathematical structure or approach
+- **Real-Life Context Layer**: Changes how numbers/information are presented (embedded in scenario vs. given directly)
+
+### Purpose
+
+When Real-Life Context is applied:
+- Numbers are **NOT given directly** in the question
+- Student must **read and comprehend** the scenario first
+- Student must **extract relevant information** from context
+- Tests **comprehension + mathematical skill** together
+
+### Two-Step Process
+
+```
+Original Question
+      ↓
+Step 1: Apply Variation Type (1-5)
+      ↓
+Step 2: Apply Real-Life Context Layer (if applicable)
+      ↓
+Final Question
+```
+
+**Example Flow:**
+```
+Original: "A circle has radius 10 cm. A chord is 6 cm from centre. Find chord length."
+
+Step 1 - Apply Type 1 (Different Numbers):
+"A circle has radius 12 cm. A chord is 5 cm from centre. Find chord length."
+
+Step 2 - Apply Real-Life Context:
+"A circular swimming pool has a radius of 12 metres. A lane rope is
+stretched across the pool as a straight chord, positioned 5 metres
+from the centre of the pool. Find the length of the lane rope."
+```
+
+### Application Rules
+
+| Section | Real-Life Context | Reason |
+|---------|-------------------|--------|
+| **First 2-3 questions** | ❌ **0%** - Keep abstract | Test basic concepts directly |
+| **Remaining questions** | ✅ **~80%** apply | Test comprehension + math |
+| **Priority** | Diagram questions > Text questions | Visual scenarios more impactful |
+
+### When to Apply (Decision Tree)
+
+```
+Is this in the first 2-3 questions of a section?
+  → YES: Do NOT apply Real-Life Context (keep abstract)
+  → NO: Continue...
+
+Does this question have a diagram?
+  → YES: HIGH priority for Real-Life Context
+  → NO: MEDIUM priority for Real-Life Context
+
+Random selection (aim for ~80% of remaining questions)
+  → APPLY: Wrap in real-world scenario
+  → SKIP: Keep abstract/direct
+```
+
+### Real-Life Context Examples by Topic
+
+| Topic | Abstract Version | Real-Life Context Version |
+|-------|------------------|---------------------------|
+| **Chord theorem** | "A circle has radius r, chord is d from centre..." | "A circular swimming pool... lane rope stretched across..." |
+| **Circle angles** | "Points A, B, C, D lie on a circle. ∠AOB = 124°..." | "A circular stadium has spectators at positions A, B, C, D on the boundary..." |
+| **Tangent-secant** | "PT is tangent to circle at T. Line from P intersects at Q, R..." | "A footpath touches a circular pond at point T (tangent)..." |
+| **Trigonometry** | "A rope of length 18m makes angle 42° with vertical..." | "A rescue helicopter hovers above. Its rope, extended at 42° to vertical..." |
+| **Sine/Cosine rule** | "In triangle ABC, angle A = 42°, angle B = 73°, BC = 15m..." | "A surveyor measures a triangular paddock. From corner A..." |
+| **Surface area** | "A cylinder has radius 5m and height 12m..." | "A farmer needs to paint a cylindrical grain silo..." |
+| **Volume** | "A square pyramid has base 8m and slant height 10m..." | "A shopping centre has a pyramid-shaped glass skylight..." |
+| **Sine graphs** | "Use the graph to find θ when sin θ = 0.5..." | "A Ferris wheel's height varies with rotation. Use the graph..." |
+
+### Diagram Handling with Real-Life Context
+
+When Real-Life Context is applied to a diagram question:
+1. **Create NEW diagram** that matches the real-world scenario
+2. Include visual elements (water for pool, grass for park, etc.)
+3. Label with context-appropriate terms (lane rope, footpath, etc.)
+4. Keep mathematical elements clear and measurable
+
+### What Real-Life Context Does NOT Change
+
+- The mathematical concept being tested
+- The difficulty level
+- The numerical values (unless also applying Type 1)
+- The solution method
+- The mark allocation
+
+---
+
 ## Selecting Variation Type
 
 ### Decision Framework
@@ -352,6 +450,15 @@ Variation: [example]
 ---
 
 ## Version History
+
+**v1.2** (2026-01-12)
+- Added **Real-Life Context Layer** documentation
+- Clarified that Real-Life Context is a PRESENTATION LAYER, not a variation type
+- Added two-step process: (1) Apply Type 1-5, then (2) Apply Real-Life Context
+- Added application rules: First 2-3 questions = 0%, remaining = ~80%
+- Added priority rule: Diagram questions > Text questions
+- Added Real-Life Context examples table by topic
+- Added decision tree for when to apply
 
 **v1.1** (2026-01-11)
 - Added Type 5: Construct & Calculate (No Diagram Given)

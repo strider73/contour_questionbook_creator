@@ -1,0 +1,45 @@
+# macOS system files
+.DS_Store
+**/.DS_Store
+
+# Generated PDFs (can be regenerated from config)
+*.pdf
+
+# Scanned workbook images (too large, user-specific)
+**/workbook-scan/
+
+# Generated images (can be regenerated)
+new_images/
+answer_images/
+test_pages/
+
+# Extracted images from PDFs (can be regenerated)
+**/images/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*pycache*
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE settings
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Config files with sensitive data (if any)
+# *.env
+
+# Large binary files
+*.zip
+*.tar.gz

@@ -1,0 +1,204 @@
+{
+  "title": "Year 10 Mathematics",
+  "subtitle": "AOS 7 Revision - Mixed Mock CAT 2",
+  "version": "Version A",
+  "total_marks": 60,
+  "time_allowed": "60 minutes",
+  "instructions": [
+    "Answer ALL questions in the spaces provided",
+    "Show all working to receive full marks",
+    "CAS calculators are permitted unless otherwise stated",
+    "Diagrams are NOT drawn to scale",
+    "Give answers correct to 2 decimal places unless otherwise specified",
+    "Exact values should be given where indicated"
+  ],
+  "output_path": "Year 10 Mathematics AOS 7 Revision [10.2]/Year_10_AOS7_Mixed_Mock_CAT_2.pdf",
+  "sections": [
+    {
+      "name": "Section A: Geometry (18 marks)",
+      "marks": 18,
+      "questions": [
+        {
+          "number": 1,
+          "marks": 2,
+          "text": "Two triangles ABC and DEF are shown. Determine whether they are congruent. If so, state the congruence condition (SSS, SAS, AAS, or RHS) and write the congruence statement.",
+          "diagram": "new_images/q1_congruent_triangles.png",
+          "space": 4
+        },
+        {
+          "number": 2,
+          "marks": 3,
+          "text": "Triangle PQR is similar to triangle XYZ with a scale factor of 2.5. If PQ = 6 cm, QR = 8 cm, and PR = 10 cm, find:",
+          "parts": [
+            {"label": "a", "text": "The length of XY.", "marks": 1, "space": 2},
+            {"label": "b", "text": "The length of YZ.", "marks": 1, "space": 2},
+            {"label": "c", "text": "If the area of triangle PQR is 24 cm², find the area of triangle XYZ.", "marks": 1, "space": 3}
+          ]
+        },
+        {
+          "number": 3,
+          "marks": 3,
+          "text": "A circular swimming pool has a radius of 10 metres. Two lane ropes are stretched across the pool as straight chords. Lane rope AB is 6 metres from the centre, and lane rope CD is 8 metres from the centre.",
+          "diagram": "new_images/q3_pool.png",
+          "parts": [
+            {"label": "a", "text": "Find the length of lane rope AB.", "marks": 2, "space": 3},
+            {"label": "b", "text": "Find the length of lane rope CD.", "marks": 1, "space": 3}
+          ]
+        },
+        {
+          "number": 4,
+          "marks": 4,
+          "text": "A circular stadium has seating around its perimeter. Points A, B, C, and D represent four spectator positions on the stadium boundary, with the centre of the field at O. The angle AOB at the centre (covering the main stage) is 124°, and spectator at position C sees the angle BCD = 98°.",
+          "diagram": "new_images/q4_stadium.png",
+          "parts": [
+            {"label": "a", "text": "Find angle ADB (the viewing angle of the stage from seat D), giving a reason for your answer.", "marks": 2, "space": 3},
+            {"label": "b", "text": "Find angle DAB, giving a reason for your answer.", "marks": 2, "space": 3}
+          ]
+        },
+        {
+          "number": 5,
+          "marks": 3,
+          "text": "A circular pond in a park has a straight footpath that touches the pond at point T (tangent). A jogger at point P on the footpath can see across the pond to point Q on the opposite edge. The distance from P to T along the footpath is 12 m, and the distance from P to Q is 8 m. Find the length of the chord TQ (the pond's edge visible between T and Q).",
+          "diagram": "new_images/q5_pond_footpath.png",
+          "space": 5
+        },
+        {
+          "number": 6,
+          "marks": 3,
+          "text": "In the diagram, AC is a tangent to the circle at B. Points B, D, and E lie on the circle. Angle DBE = 54° and angle ABD = 3x + 12°. Find the value of x, giving reasons.",
+          "diagram": "new_images/q6_alternate_segment.png",
+          "space": 5
+        }
+      ]
+    },
+    {
+      "name": "Section B: Trigonometry (24 marks)",
+      "marks": 24,
+      "new_page": true,
+      "questions": [
+        {
+          "number": 7,
+          "marks": 2,
+          "text": "A rescue helicopter hovers at a height where its rescue rope, when fully extended at an angle of 42° to the vertical, reaches exactly 18 metres in length. Calculate the horizontal distance from the helicopter to the rescue point on the ground, correct to two decimal places.",
+          "diagram": "new_images/q7_helicopter.png",
+          "space": 4
+        },
+        {
+          "number": 8,
+          "marks": 2,
+          "text": "Find the value of θ in the triangle shown, correct to one decimal place.",
+          "diagram": "new_images/q8_find_angle.png",
+          "space": 4
+        },
+        {
+          "number": 9,
+          "marks": 3,
+          "text": "From the top of a building 65 m tall, the angle of depression to a car parked on the street is 28°. Calculate the horizontal distance from the base of the building to the car, correct to one decimal place.",
+          "space": 5
+        },
+        {
+          "number": 10,
+          "marks": 4,
+          "text": "A yacht sails from port A on a bearing of 065° for 24 km to point B. It then sails on a bearing of 155° for 18 km to point C.",
+          "parts": [
+            {"label": "a", "text": "Draw a diagram showing the yacht's journey.", "marks": 1, "space": 5},
+            {"label": "b", "text": "Find angle ABC.", "marks": 1, "space": 2},
+            {"label": "c", "text": "Use the cosine rule to find the direct distance from A to C.", "marks": 2, "space": 4}
+          ]
+        },
+        {
+          "number": 11,
+          "marks": 4,
+          "text": "A surveyor is measuring a triangular paddock ABC. From corner A, the angle to the other corners is 42°. From corner B, the angle is 73°. The fence along side BC (opposite to corner A) measures 15 metres.",
+          "diagram": "new_images/q11_farm_paddock.png",
+          "parts": [
+            {"label": "a", "text": "Find the length of fence AB (opposite to corner C), correct to 2 decimal places.", "marks": 2, "space": 4},
+            {"label": "b", "text": "Calculate the area of the paddock, correct to 2 decimal places.", "marks": 2, "space": 4}
+          ]
+        },
+        {
+          "number": 12,
+          "marks": 3,
+          "text": "Without using a calculator, find the exact values of:",
+          "parts": [
+            {"label": "a", "text": "sin 120°", "marks": 1, "space": 2},
+            {"label": "b", "text": "cos 315°", "marks": 1, "space": 2},
+            {"label": "c", "text": "tan 210°", "marks": 1, "space": 2}
+          ]
+        },
+        {
+          "number": 13,
+          "marks": 3,
+          "text": "Convert the following:",
+          "parts": [
+            {"label": "a", "text": "Convert 225° to radians, giving your answer in terms of π.", "marks": 1, "space": 2},
+            {"label": "b", "text": "Convert 5π/4 radians to degrees.", "marks": 1, "space": 2},
+            {"label": "c", "text": "Find the exact value of sin(5π/6) + cos(2π/3).", "marks": 1, "space": 3}
+          ]
+        },
+        {
+          "number": 14,
+          "marks": 3,
+          "text": "The height of a passenger on a Ferris wheel can be modeled by a sine function. The graph shows the height variation as the wheel rotates through 360°.",
+          "diagram": "new_images/q14_ferris_wheel.png",
+          "parts": [
+            {"label": "a", "text": "Use the graph to estimate the height (sin value) when the wheel has rotated 130°.", "marks": 1, "space": 2},
+            {"label": "b", "text": "Find the rotation angles between 0° and 360° when sin θ = -0.5.", "marks": 2, "space": 3}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Section C: Measurement (18 marks)",
+      "marks": 18,
+      "new_page": true,
+      "questions": [
+        {
+          "number": 15,
+          "marks": 3,
+          "text": "Calculate the surface area of the composite shape shown, which consists of a rectangle with three semicircles. Give your answer correct to one decimal place.",
+          "diagram": "new_images/q15_composite_area.png",
+          "space": 5
+        },
+        {
+          "number": 16,
+          "marks": 3,
+          "text": "A farmer needs to paint the exterior of a cylindrical grain silo. The silo has a radius of 5 metres and a height of 12 metres.",
+          "diagram": "new_images/q16_silo.png",
+          "parts": [
+            {"label": "a", "text": "Calculate the area of the curved surface to be painted.", "marks": 1, "space": 3},
+            {"label": "b", "text": "If the farmer also paints the flat circular roof, calculate the total area to be painted.", "marks": 2, "space": 3}
+          ]
+        },
+        {
+          "number": 17,
+          "marks": 4,
+          "text": "A shopping centre has a square-based pyramid-shaped glass skylight. The base of the skylight is 8 metres × 8 metres, and the slant height of each glass panel is 10 metres.",
+          "diagram": "new_images/q17_glass_skylight.png",
+          "parts": [
+            {"label": "a", "text": "Find the perpendicular height of the skylight from base to apex.", "marks": 2, "space": 4},
+            {"label": "b", "text": "Calculate the total area of glass required (4 triangular panels only, not the base).", "marks": 2, "space": 4}
+          ]
+        },
+        {
+          "number": 18,
+          "marks": 3,
+          "text": "A steel block measuring 10 cm × 8 cm × 6 cm has a cylindrical hole of diameter 4 cm drilled completely through it (through the 6 cm height). Calculate the volume of the remaining steel, correct to two decimal places.",
+          "diagram": "new_images/q18_volume_hole.png",
+          "space": 5
+        },
+        {
+          "number": 19,
+          "marks": 5,
+          "text": "<b>Type 5: Construct & Calculate</b><br/><br/>A storage container consists of a cylindrical body with a conical top. The cylinder has a diameter of 4 m and the total height of the container is 9 m. The slant height of the cone is 2.5 m.",
+          "parts": [
+            {"label": "a", "text": "Draw a labeled diagram of the container showing all given dimensions.", "marks": 1, "space": 5},
+            {"label": "b", "text": "Calculate the perpendicular height of the cone.", "marks": 1, "space": 3},
+            {"label": "c", "text": "Find the height of the cylindrical part.", "marks": 1, "space": 2},
+            {"label": "d", "text": "Calculate the total volume of the container, correct to two decimal places.", "marks": 2, "space": 5}
+          ]
+        }
+      ]
+    }
+  ]
+}
