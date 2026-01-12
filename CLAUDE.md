@@ -59,6 +59,8 @@ brew install tesseract  # macOS OCR engine
 
 ## Architecture
 
+**See detailed architecture:** [.claude/docs/ARCHITECTURE.md](.claude/docs/ARCHITECTURE.md)
+
 ### Agent Orchestration
 
 ```

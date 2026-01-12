@@ -51,13 +51,7 @@ Identify from the textbook scans:
 - Learning objectives
 - Types of questions students should master
 
-### Step 2: Reference Curriculum
-Use `curriculum_reference.md` to ensure:
-- All required skills are covered
-- Appropriate difficulty progression
-- Correct notation and terminology
-
-### Step 3: Design Test Structure
+### Step 2: Design Test Structure
 
 ```
 Section A: Short Answer (36 marks)
@@ -70,7 +64,7 @@ Section B: Extended Response (14 marks)
 └── Optimization/Modeling (Q21): 8 marks
 ```
 
-### Step 4: Create Questions
+### Step 3: Create Questions
 Map each learning objective to 1-3 questions:
 - Direct computation (1 mark)
 - Method-specific problems (substitution/elimination)
@@ -78,7 +72,7 @@ Map each learning objective to 1-3 questions:
 - Word problems with real-world context
 - Multi-step extended response
 
-### Step 5: Generate LaTeX
+### Step 4: Generate LaTeX
 Use Contour Education formatting:
 ```latex
 % Contour Education styling
@@ -87,7 +81,7 @@ Use Contour Education formatting:
 \fancyhead[R]{Year 10 Mathematics}
 ```
 
-### Step 6: Compile to PDF
+### Step 5: Compile to PDF
 ```bash
 /Library/TeX/texbin/pdflatex -interaction=nonstopmode -output-directory="[folder]" "[file].tex"
 ```
@@ -200,10 +194,7 @@ Use Contour Education formatting:
 
 ### In This Skill Folder
 
-1. **`curriculum_reference.md`** - Complete Year 10 curriculum (AOS 6-9)
-   - All formulas, theorems, difficulty benchmarks
-
-2. **`question_format_patterns.md`** - Question Pattern Library
+1. **`question_format_patterns.md`** - Question Pattern Library
    - 9 Categories of question formats
    - Pattern structure with examples
 
@@ -213,23 +204,6 @@ Use Contour Education formatting:
 |------|-------------|
 | `examples/generated_test_without_contour_pdf/Linear_Equations_Review_Test.pdf` | Complete reference test |
 | `examples/linear_equations_summary.md` | Detailed creation log |
-
----
-
-## Curriculum Quick Lookup
-
-| Topic | Look in curriculum_reference.md section |
-|-------|----------------------------------------|
-| Probability, Venn diagrams | AOS 6 |
-| Statistics, mean, SD | AOS 6 |
-| Circle theorems | AOS 7 |
-| Surface area, volume | AOS 7 |
-| Polynomial division, factor theorem | AOS 8 |
-| Cubic/quartic graphs | AOS 8 |
-| Domain/range, functions | AOS 9 |
-| Square root, hyperbola graphs | AOS 9 |
-| Circles (equations) | AOS 9 |
-| Linear equations, simultaneous | Linear Equations |
 
 ---
 
